@@ -3,9 +3,9 @@ package banking;
 import java.sql.*;
 
 public class Database {
-    private static String url = "jdbc:sqlite:/Users/wnimta/Downloads/Simple_Banking_System/Simple Banking System/task";
-    public static void createNewDatabase(String fileName) {
-        url += fileName;
+    private static String url = "jdbc:sqlite:mydb.s3db";
+
+    public static void createNewDatabase() {
         try (Connection conn = DriverManager.getConnection(url)) {
             if (conn != null) {
                 DatabaseMetaData meta = conn.getMetaData();

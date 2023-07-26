@@ -179,21 +179,4 @@ public class AccountManager {
         }
         return false;
     }
-
-/*    public void showAllAccounts() {
-        String sql = "SELECT * FROM card";
-        ResultSet rs;
-        try (Connection conn = Database.getConnection();
-             Statement stmt = conn.createStatement()) {
-
-            rs = stmt.executeQuery(sql);
-
-            while (rs.next()) {
-                System.out.println(rs.getInt("id") + " " + rs.getString("number") + " "
-                + rs.getString("pin") + " " + rs.getString("balance"));
-            }
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }*/
 }

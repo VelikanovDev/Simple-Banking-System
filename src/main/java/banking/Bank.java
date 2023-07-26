@@ -44,7 +44,7 @@ public class Bank {
         try {
             input = Integer.parseInt(scanner.nextLine());
         } catch (Exception e) {
-            System.out.println();
+            System.out.println(e.getMessage());
         }
         return input;
     }
